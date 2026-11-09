@@ -3,62 +3,15 @@
 Protótipo de portfólio profissional com estética de terminal Linux.
 React 19 · TypeScript · Vite 8 · Tailwind CSS 4 · Lucide Icons.
 
-## Rodar no dia a dia
+## Rodar
 
 ```bash
-npm run dev        # http://localhost:5173 - recarrega ao salvar
-npm run build      # gera dist/
-npm run preview    # serve o build local
-npm run typecheck  # só checa os tipos
-```
-
-Para parar o servidor: `Ctrl + C` no terminal.
-
-## Primeira vez em outro computador
-
-O `node_modules` não fica no Git (são milhares de arquivos, todos
-reinstaláveis). Então numa máquina nova:
-
-```bash
-# 1. pré-requisitos: Node.js LTS (nodejs.org) e Git
-git clone https://github.com/AkinRigo/portfolio-akin.git
-cd portfolio-akin
-
-# 2. baixa as dependências (só na primeira vez, demora ~1 min)
 npm install
-
-# 3. sobe o site local
-npm run dev
+npm run dev        # http://localhost:5173
+npm run build      # gera dist/
+npm run preview    # serve o build
+npm run typecheck  # checagem de tipos
 ```
-
-Depois disso, no dia a dia, só `npm run dev`.
-
-### Identidade do Git na máquina nova
-
-O `git config` de autor fica em `.git/config`, que **não é clonado**.
-Numa máquina pessoal, configure uma vez:
-
-```bash
-git config --global user.name "Akin Rigo"
-git config --global user.email "82190093+AkinRigo@users.noreply.github.com"
-```
-
-Esse e-mail é o anônimo do GitHub: o commit conta no perfil sem expor
-o endereço real.
-
-## Publicar uma alteração
-
-```bash
-git add -A
-git commit -m "atualiza textos"
-git push
-```
-
-O GitHub Actions builda, checa os tipos e publica no Cloudflare Pages
-em cerca de um minuto. Se o TypeScript quebrar, nada vai pro ar.
-
-- Site: https://portfolio-akin.pages.dev
-- Builds: https://github.com/AkinRigo/portfolio-akin/actions
 
 ## Onde editar o conteúdo
 
