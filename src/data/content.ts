@@ -65,9 +65,9 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: 'logys-erp',
-    name: 'LogysERP',
-    kind: 'ERP multiempresa',
+    id: 'erp-industrial',
+    name: 'ERP Industrial',
+    kind: 'Sistema de gestão multiempresa',
     year: '2026',
     status: 'EM DESENVOLVIMENTO',
     summary:
@@ -82,9 +82,9 @@ export const projects: Project[] = [
     docs: '#',
   },
   {
-    id: 'logys-rh',
-    name: 'LogysRH',
-    kind: 'Sistema de RH + PWA',
+    id: 'sistema-rh',
+    name: 'Sistema de RH',
+    kind: 'Gestão de pessoas + PWA',
     year: '2026',
     status: 'EM PRODUÇÃO',
     summary:
@@ -116,9 +116,9 @@ export const projects: Project[] = [
     docs: '#',
   },
   {
-    id: 'fibrat',
-    name: 'Painel Fibrat',
-    kind: 'Refatoração e manutenção',
+    id: 'painel-operacional',
+    name: 'Painel Operacional',
+    kind: 'Refatoração de sistema legado',
     year: '2026',
     status: 'EM PRODUÇÃO',
     summary:
@@ -128,7 +128,7 @@ export const projects: Project[] = [
       '56 correções de defeito · 65 funcionalidades novas',
       '64.648 linhas removidas em refatoração',
     ],
-    stack: ['Python', 'SQL', 'Git', 'Pull Request', 'TecnoSpeed NF-e'],
+    stack: ['Python', 'SQL', 'Git', 'Pull Request', 'Integração NF-e'],
     repo: '#',
     docs: '#',
   },
