@@ -10,13 +10,13 @@ export const profile = {
   handle: 'akin',
   host: 'portfolio',
   location: 'São Paulo, Brasil',
-  tags: ['SPRING_BOOT', 'ERP_FISCAL', 'APP_SECURITY'],
+  tags: ['JAVA', 'SPRING BOOT', 'CIBERSEGURANÇA'],
   tagline:
-    'Construindo sistemas de gestão de ponta a ponta — da modelagem do banco à apuração fiscal em produção.',
+    'Construindo soluções tecnológicas de ponta a ponta, com foco em back-end, segurança e arquitetura de software.',
   summary: [
-    'Desenvolvedor back-end focado em Java 21 e Spring Boot. Meu trabalho hoje é construir e manter sistemas corporativos em produção: um ERP multiempresa, um sistema de RH e uma plataforma de atendimento.',
-    'Antes de programar ERP, operei TOTVS e SAP por dentro. Isso mudou a forma como eu projeto: módulos que conversam entre si em vez de telas isoladas, um banco de dados por empresa e nomenclatura de mercado. Um lançamento precisa percorrer estoque, custo, financeiro e fiscal a partir de um documento só.',
-    'Fora do horário eu estudo cibersegurança e arquitetura. É de onde vêm as decisões de criptografia dos sistemas que mantenho — algoritmo adequado a cada finalidade, em vez do mesmo mecanismo para tudo.',
+    'Desenvolvedor Back-end especializado em Java e Spring Boot, com experiência no desenvolvimento e manutenção de sistemas corporativos, APIs REST, integrações e regras de negócio.',
+    'Atuo em diferentes contextos de negócio, incluindo gestão empresarial, recursos humanos e atendimento, sempre buscando construir soluções bem estruturadas e alinhadas às necessidades de cada aplicação.',
+    'Tenho interesse contínuo em arquitetura de software, boas práticas de desenvolvimento e cibersegurança, buscando evoluir tecnicamente e entregar código seguro, organizado e sustentável.',
   ],
   interests: [
     {
@@ -37,7 +37,7 @@ export const profile = {
     },
     {
       title: 'Boas práticas',
-      body: 'Teste automatizado, branch por entrega, pull request e ambiente de homologação antes da produção.',
+      body: 'Teste automatizado, teste de integração, branch por entrega, pull request e ambiente de homologação antes da produção.',
     },
     {
       title: 'Segurança aplicada',
@@ -69,7 +69,7 @@ export const projects: Project[] = [
     name: 'ERP Industrial',
     kind: 'Sistema de gestão multiempresa',
     year: '2026',
-    status: 'EM DESENVOLVIMENTO',
+    status: 'EM PRODUÇÃO',
     summary:
       'ERP completo com 14 módulos integrados, da compra da matéria-prima à apuração do imposto. Arquitetura multiempresa com um banco de dados isolado por cliente.',
     highlights: [
@@ -84,17 +84,34 @@ export const projects: Project[] = [
   {
     id: 'sistema-rh',
     name: 'Sistema de RH',
-    kind: 'Gestão de pessoas + PWA',
+    kind: 'Gestão de pessoas multiempresa',
     year: '2026',
     status: 'EM PRODUÇÃO',
     summary:
-      'Sistema de gestão de pessoas com 22 áreas: ponto, férias, folha, avaliação, EPI e saúde ocupacional. Inclui app de ponto instalável, sem passar por loja.',
+      'Sistema de gestão de pessoas com 22 áreas: ponto, férias, folha, avaliação de desempenho, EPI e saúde ocupacional, com indicadores para a gestão.',
     highlights: [
       '22 áreas implementadas · 1.668 arquivos',
-      'PWA de ponto com hora do servidor e GPS na batida',
+      'Perfis e permissões por área',
       '112 arquivos de teste · em produção com usuários reais',
     ],
-    stack: ['Java', 'Spring Boot', 'PostgreSQL', 'PWA', 'Service Worker', 'JUnit 5'],
+    stack: ['Java', 'Spring Boot', 'Spring Security', 'PostgreSQL', 'Flyway', 'JUnit 5'],
+    repo: '#',
+    docs: '#',
+  },
+  {
+    id: 'app-ponto',
+    name: 'App de Ponto',
+    kind: 'PWA instalável',
+    year: '2026',
+    status: 'EM PRODUÇÃO',
+    summary:
+      'Aplicativo de registro de ponto que o colaborador instala na tela inicial do celular, sem passar pela loja da Apple ou do Google. Tem também modo tablet, para o aparelho fixo na entrada.',
+    highlights: [
+      'Hora do servidor, nunca a do aparelho',
+      'Captura de localização no momento da batida',
+      'Modo tablet com logout automático após o registro',
+    ],
+    stack: ['PWA', 'Service Worker', 'JavaScript', 'Geolocation API', 'Spring Boot'],
     repo: '#',
     docs: '#',
   },
@@ -122,7 +139,7 @@ export const projects: Project[] = [
     year: '2026',
     status: 'EM PRODUÇÃO',
     summary:
-      'Sistema legado em Python que eu assumi e refatorei enquanto sustentava a operação diária — sem derrubar o que já estava em uso.',
+      'Sistema legado em Python que eu assumi e estou em processo de refatoração enquanto sustento a operação diária — sem derrubar o que já estava em uso.',
     highlights: [
       '570 de 610 commits · 146 pull requests',
       '56 correções de defeito · 65 funcionalidades novas',
@@ -140,10 +157,10 @@ export const stack: StackGroup[] = [
   { label: 'Linguagens', items: ['Java 21', 'Python', 'SQL', 'TypeScript', 'JavaScript'] },
   {
     label: 'Frameworks',
-    items: ['Spring Boot', 'Spring Data JPA', 'Spring Security', 'Spring WebSocket'],
+    items: ['Spring Boot', 'Spring Data JPA', 'Spring Security', 'Spring WebSocket', 'FastAPI', 'PWA', 'pydantic','pytest',],
   },
-  { label: 'Banco de dados', items: ['PostgreSQL', 'SQLite', 'Flyway', 'JPA / Hibernate'] },
-  { label: 'Ferramentas', items: ['Git', 'GitHub', 'Docker', 'IntelliJ IDEA', 'nginx', 'Linux / VPS'] },
+  { label: 'Banco de dados', items: ['PostgreSQL', 'SQLite', 'Flyway', 'JPA / Hibernate', 'Alembic'] },
+  { label: 'Ferramentas', items: [ 'GitHub', 'Docker', 'VS Code', 'IntelliJ IDEA', 'Postman', 'nginx', 'Linux / VPS'] },
   { label: 'Testes', items: ['JUnit 5', 'Mockito', 'Testes de integração'] },
   { label: 'Segurança', items: ['Argon2id', 'AES-GCM', 'PASETO', 'TOTP', 'HMAC-SHA256'] },
 ]
