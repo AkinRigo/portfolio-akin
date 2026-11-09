@@ -1,0 +1,29 @@
+# dependências
+node_modules/
+
+# build
+dist/
+dist-ssr/
+*.local
+
+# logs
+*.log
+npm-debug.log*
+
+# editor / SO
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# ambiente
+.env
+.env.*
+!.env.example
+
+# cloudflare
+.wrangler/
+
+# artefatos do typescript
+*.tsbuildinfo
